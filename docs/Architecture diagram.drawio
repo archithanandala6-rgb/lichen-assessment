@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="k6OPkXkylhyCwzwqxrtN">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-3" edge="1" parent="1" source="4l0obdmBJ4P8HQy0mI9w-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classicThin;endFill=1;" target="4l0obdmBJ4P8HQy0mI9w-2" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="468" y="170" />
+              <mxPoint x="468" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Heavy Chain Sequence + Optional Constraints(Germline, Seed, CDR Regions, etc.)" vertex="1">
+          <mxGeometry height="100" width="335" x="305" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-5" edge="1" parent="1" source="4l0obdmBJ4P8HQy0mI9w-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4l0obdmBJ4P8HQy0mI9w-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-2" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Imput Validation &amp;amp; Formatting&amp;nbsp;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;ul&gt;&lt;li&gt;Single Sequence&lt;/li&gt;&lt;li&gt;FASTA File&lt;/li&gt;&lt;li&gt;CSV Input&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="340" x="300" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-7" edge="1" parent="1" source="4l0obdmBJ4P8HQy0mI9w-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4l0obdmBJ4P8HQy0mI9w-6" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Tokenizer&lt;div&gt;Tokenizer.py + vocab.json&lt;/div&gt;&lt;div&gt;Converts amino acids to tokens&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="340" x="300" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-9" edge="1" parent="1" source="4l0obdmBJ4P8HQy0mI9w-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4l0obdmBJ4P8HQy0mI9w-8" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-6" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="LICHEN Generative Model&lt;div&gt;model.py + inference.py&lt;/div&gt;&lt;div&gt;Generates candidate light chains&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="340" x="300" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-11" edge="1" parent="1" source="4l0obdmBJ4P8HQy0mI9w-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4l0obdmBJ4P8HQy0mI9w-10" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-8" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Candidate Light Chain sequences( n generated Candidates)" vertex="1">
+          <mxGeometry height="60" width="340" x="300" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-13" edge="1" parent="1" source="4l0obdmBJ4P8HQy0mI9w-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="4l0obdmBJ4P8HQy0mI9w-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-10" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="Filtering and scoring Layer&lt;br&gt;utils.py&lt;div&gt;&lt;div&gt;&lt;ul&gt;&lt;li style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ANARCII validation&lt;/span&gt;&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Humatch scoring&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Ablang2 ranking&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Diversity Selection&lt;/li&gt;&lt;li style=&quot;text-align: left;&quot;&gt;Deduplication&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="340" x="300" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-12" parent="1" style="whiteSpace=wrap;html=1;rounded=0;align=center;" value="Output&lt;br&gt;&lt;ul&gt;&lt;li&gt;Python DataFrame&lt;/li&gt;&lt;li&gt;CSV Export&lt;/li&gt;&lt;li style=&quot;&quot;&gt;Ranked Light Chains&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="100" width="340" x="300" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="4l0obdmBJ4P8HQy0mI9w-15" edge="1" parent="1" source="4l0obdmBJ4P8HQy0mI9w-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="4l0obdmBJ4P8HQy0mI9w-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
