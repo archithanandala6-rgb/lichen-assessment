@@ -19,7 +19,7 @@ Repository Structure
 
 docs/
 ├── Analysis_Report.pdf
-└── Architecture.png
+└── Architecture diagram.png
 improvements/
 ├── README.md
 └── pyproject.toml
@@ -96,4 +96,4 @@ Key Findings
 Documents
 
 * Analysis Report: docs/Analysis_Report.pdf
-* Architecture Diagram: docs/Architecture.png
+* Architecture Diagram: docs/Architecture diagram.png
